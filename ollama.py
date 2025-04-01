@@ -2,9 +2,8 @@ import streamlit as st
 import requests
 import json
 
-st.set_page_config(page_title="My Agent", page_icon="🔥")
-st.title("🔥 My Custom AI Agent (Powered by Ollama)")
-
+st.set_page_config(page_title="Free Ollama Agent", page_icon="🔥")
+st.title("🔥 Free Ollama agent")
 # Session state to store the full conversation
 if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "system", "content": "You're a helpful assistant."}]
